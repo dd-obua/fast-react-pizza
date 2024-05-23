@@ -1,5 +1,11 @@
+import PropTypes from 'prop-types';
+
+import { formatCurrency } from '../../utils/helpers';
+
 function OrderItem({ item, isLoadingIngredients, ingredients }) {
   const { quantity, name, totalPrice } = item;
+
+  isLoadingIngredients, ingredients;
 
   return (
     <li>
@@ -12,5 +18,11 @@ function OrderItem({ item, isLoadingIngredients, ingredients }) {
     </li>
   );
 }
+
+OrderItem.propTypes = {
+  item: PropTypes.number  ,
+  isLoadingIngredients: PropTypes.bool,
+  ingredients: PropTypes.arrayOf(PropTypes.string),
+};
 
 export default OrderItem;
