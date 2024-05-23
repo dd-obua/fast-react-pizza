@@ -4,8 +4,8 @@ function Main({ children }) {
   return <div>{children}</div>;
 }
 
-export default Main;
-
 Main.propTypes = {
   children: PropTypes.node,
 };
+
+export default Main;
