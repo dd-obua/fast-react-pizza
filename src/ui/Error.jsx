@@ -3,7 +3,7 @@ import { useNavigate, useRouteError } from 'react-router-dom';
 function Error() {
   const navigate = useNavigate();
   const error = useRouteError();
-  const message = error.data;
+  const message = error.data || error.message;
 
   return (
     <div>
