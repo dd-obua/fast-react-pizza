@@ -20,7 +20,7 @@ function OrderItem({ item, isLoadingIngredients, ingredients }) {
 }
 
 OrderItem.propTypes = {
-  item: PropTypes.number  ,
+  item: PropTypes.object,
   isLoadingIngredients: PropTypes.bool,
   ingredients: PropTypes.arrayOf(PropTypes.string),
 };
