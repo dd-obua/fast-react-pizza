@@ -1,1 +1,6 @@
-{ "extends": "react-app" }
+{
+  "env": {
+    "node": true,
+    "es6": true
+  }
+}
