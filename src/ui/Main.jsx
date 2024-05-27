@@ -1,7 +1,11 @@
 import PropTypes from 'prop-types';
 
 function Main({ children }) {
-  return <div>{children}</div>;
+  return <main className='overflow-scroll'>
+    <div className='max-w-3xl mx-auto'>
+      {children}
+    </div>
+  </main>;
 }
 
 Main.propTypes = {
