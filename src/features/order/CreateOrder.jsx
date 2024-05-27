@@ -70,20 +70,20 @@ function CreateOrder() {
           </div>
         </div>
 
-        <div>
+        <div className='pb-2'>
           <input
             type="checkbox"
             name="priority"
             id="priority"
-            // value={withPriority}
-            // onChange={(e) => setWithPriority(e.target.checked)}
+          // value={withPriority}
+          // onChange={(e) => setWithPriority(e.target.checked)}
           />
-          <label htmlFor="priority">Want to yo give your order priority?</label>
+          <label htmlFor="priority"> Want to you give your order priority?</label>
         </div>
 
         <div>
           <input type="hidden" name="cart" value={JSON.stringify(cart)} />
-          <button disabled={isSubmitting}>
+          <button disabled={isSubmitting} className='bg-yellow-500 uppercase tracking-wide font-semibold text-stone-900 px-4 py-2 inline-block rounded-full hover:bg-yellow-400 hover:text-stone-800 transition-colors duration-300 focus:outline-none focus:ring focus:ring-yellow-300 focus: ring-offset-2 disabled:cursor-not-allowed'>
             {isSubmitting ? 'Placing order...' : 'Order now'}
           </button>
         </div>
