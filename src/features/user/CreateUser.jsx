@@ -13,7 +13,7 @@ function CreateUser() {
       <p className='mb-4 text-sm text-stone-600 md:text-base'>
         👋 Welcome! Please start by telling us your name:
       </p>
-    
+
       <input
         type="text"
         placeholder="Your full name"
@@ -24,7 +24,7 @@ function CreateUser() {
 
       {username !== '' && (
         <div>
-          <Button to='./order/new'>Start ordering</Button>
+          <Button type='primary' to='./order/new'>Start ordering</Button>
         </div>
       )}
     </form>
