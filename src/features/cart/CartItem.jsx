@@ -14,12 +14,11 @@ function CartItem({ item }) {
       </p>
       <div className='flex items-center gap-6'>
         <p className='mr-auto text-sm font-bold'>{formatCurrency(totalPrice)}</p>
-        <Button type='secondary'>Delete</Button>
+        <Button type='small'>Delete</Button>
       </div>
     </li>
   );
 }
-
 
 CartItem.propTypes = {
   item: PropTypes.shape({
