@@ -8,12 +8,12 @@ function OrderItem({ item, isLoadingIngredients, ingredients }) {
   isLoadingIngredients, ingredients;
 
   return (
-    <li>
-      <div>
+    <li className='py-3'>
+      <div className='flex justify-between items-center gap-4 text-sm'>
         <p>
-          <span>{quantity}&times;</span> {name}
+          <span className='font-bold'>{quantity}&times;</span> {name}
         </p>
-        <p>{formatCurrency(totalPrice)}</p>
+        <p className='font-bold'>{formatCurrency(totalPrice)}</p>
       </div>
     </li>
   );
