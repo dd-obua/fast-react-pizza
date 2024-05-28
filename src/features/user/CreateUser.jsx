@@ -19,7 +19,7 @@ function CreateUser() {
         placeholder="Your full name"
         value={username}
         onChange={(e) => setUsername(e.target.value)}
-        className='w-72 h-10 px-4'
+        className='w-72 h-10 px-4 mb-4'
       />
 
       {username !== '' && (
@@ -28,7 +28,7 @@ function CreateUser() {
         </div>
       )}
     </form>
-  );  
+  );
 }
 
 export default CreateUser;
