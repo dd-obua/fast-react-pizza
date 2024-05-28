@@ -46,32 +46,32 @@ function CreateOrder() {
   cart;
 
   return (
-    <div className='px-3'>
-      <h2>Ready to order? Let&apos;s go!</h2>
+    <div className='px-4 py-6'>
+      <h2 className='text-xl mb-8 font-semibold'>Ready to order? Let&apos;s go!</h2>
 
       {/* <Form method="POST" action="order/new"> */}
       <Form method="POST">
-        <div>
-          <label>First Name</label>
-          <input type="text" name="customer" required className='input' />
+        <div className='flex flex-col mb-5 sm:flex-row sm:items-center'>
+          <label className='sm:basis-40'>First Name</label>
+          <input type="text" name="customer" required className='input grow' />
         </div>
 
-        <div>
-          <label>Phone number</label>
-          <div>
-            <input type="tel" name="phone" required className='input' />
-          </div>
-          {formErrors?.phone && <p>{formErrors.phone}</p>}
-        </div>
-
-        <div>
-          <label>Address</label>
-          <div>
-            <input type="text" name="address" required className='input' />
+        <div className='flex flex-col mb-5 sm:flex-row sm:items-center'>
+          <label className='sm:basis-40'>Phone number</label>
+          <div className='grow'>
+            <input type="tel" name="phone" required className='input w-full' />
+            {formErrors?.phone && <p className='text-xs mt-2 text-red-700 px-4 py-2 bg-red-100 rounded-full'>{formErrors.phone}</p>}
           </div>
         </div>
 
-        <div className='pb-2 flex justify-start gap-x-2'>
+        <div className='flex flex-col mb-5 sm:flex-row sm:items-center'>
+          <label className='sm:basis-40'>Address</label>
+          <div className='grow'>
+            <input type="text" name="address" required className='input w-full' />
+          </div>
+        </div>
+
+        <div className='pb-2 flex justify-start gap-x-5 mb-12'>
           <input
             type="checkbox"
             name="priority"
@@ -80,7 +80,7 @@ function CreateOrder() {
           // value={withPriority}
           // onChange={(e) => setWithPriority(e.target.checked)}
           />
-          <label htmlFor="priority"> Want to you give your order priority?</label>
+          <label htmlFor="priority" className='font-medium'> Want to you give your order priority?</label>
         </div>
 
         <div>
