@@ -46,7 +46,7 @@ function CreateOrder() {
   cart;
 
   return (
-    <div>
+    <div className='px-3'>
       <h2>Ready to order? Let&apos;s go!</h2>
 
       {/* <Form method="POST" action="order/new"> */}
